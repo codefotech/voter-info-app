@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('voter', function (Blueprint $table) {
+        Schema::table('voter_info', function (Blueprint $table) {
             $table->string('birth_date')->change();
         });
     }
