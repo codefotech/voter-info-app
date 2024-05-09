@@ -1,0 +1,121 @@
+body {
+    height: 150vh;
+}
+
+.gradient-custom {
+    background-image: linear-gradient(to top right, #0c0958, #00228d, #07f);
+}
+
+.card-body h2 {
+    font-size: 32px;
+    color: #184ca1;
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+/* ------------------ */
+.form-email {
+    border-bottom: 2px solid #707070;
+}
+
+.form-email .icon-envelope {
+    font-size: 18px;
+    padding: 15px 0px;
+}
+
+.form-email input {
+    border: none;
+    width: 100%;
+    display: inline-block;
+    padding: 13px 0px 13px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.form-email input:hover {
+    border: none;
+    outline: none;
+}
+.form-email input:focus {
+    border: none;
+    outline: none;
+}
+/* ------------------ */
+
+/* ------------------ */
+.form-password {
+    border-bottom: 2px solid #707070;
+}
+
+.form-password .icon-lock {
+    font-size: 23px;
+    padding: 12px 0px;
+}
+
+.form-password input {
+    border: none;
+    width: 100%;
+    display: inline-block;
+    padding: 13px 0px 13px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.form-password input:hover {
+    border: none;
+    outline: none;
+}
+
+.form-password input:focus {
+    border: none;
+    outline: none;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+input[type="checkbox"] {
+    position: relative;
+    border: 1px solid #707070;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+input[type=checkbox]:checked {
+    background-color: #000;
+    opacity: 1;
+}
+
+input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: 0;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+/* ------------------ */

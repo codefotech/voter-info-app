@@ -1,0 +1,189 @@
+body {
+    height: 150vh;
+}
+
+.gradient-custom {
+	background-image: linear-gradient(to top right, #0c0958, #00228d, #07f);
+}
+
+.card-body h2 {
+	font-size: 40px;
+	color: #184ca1;
+	font-weight: 600;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/* ------------------ */
+.form-fname {
+  border-bottom: 2px solid #707070;
+}
+
+.form-fname input {
+  border: none;
+  width: 100%;
+  display: inline-block;
+  padding: 13px 0px 13px 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #707070;
+}
+
+.form-fname input:hover {
+  border: none;
+  outline: none;
+}
+
+.form-fname input:focus {
+  border: none;
+  outline: none;
+}
+/* ------------------ */
+
+/* ------------------ */
+.form-lname {
+  border-bottom: 2px solid #707070;
+}
+.form-lname input {
+	border: none;
+	width: 100%;
+	display: inline-block;
+	padding: 13px 0px 13px 2px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #707070;
+}
+.form-lname input:hover {
+  border: none;
+  outline: none;
+}
+.form-lname input:focus {
+  border: none;
+  outline: none;
+}
+/* ------------------ */
+
+/* ------------------ */
+.form-email {
+  border-bottom: 2px solid #707070;
+}
+.form-email input {
+	border: none;
+	width: 100%;
+	display: inline-block;
+	padding: 13px 0px 13px 2px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #707070;
+}
+.form-email input:hover {
+  border: none;
+  outline: none;
+}
+.form-email input:focus {
+  border: none;
+  outline: none;
+}
+/* ------------------ */
+
+/* ------------------ */
+.form-number {
+    border-bottom: 2px solid #707070;
+}
+.form-number input {
+    border: none;
+    width: 100%;
+    display: inline-block;
+    padding: 13px 0px 13px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+}
+.form-number input:hover {
+    border: none;
+    outline: none;
+}
+.form-number input:focus {
+    border: none;
+    outline: none;
+}
+/* ------------------ */
+
+/* ------------------ */
+.form-password {
+  border-bottom: 2px solid #707070;
+}
+.form-password input {
+	border: none;
+	width: 100%;
+	display: inline-block;
+	padding: 13px 0px 13px 2px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #707070;
+}
+.form-password input:hover {
+  border: none;
+  outline: none;
+}
+.form-password input:focus {
+  border: none;
+  outline: none;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+input[type="checkbox"] {
+	position: relative;
+	border: 1px solid #707070;
+	background: none;
+	cursor: pointer;
+	line-height: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0 !important;
+	vertical-align: text-top;
+	height: 16px;
+	width: 16px;
+	-webkit-appearance: none;
+}
+
+input[type=checkbox]:hover {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+
+input[type=checkbox]:before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  margin: 0;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+/* ------------------ */
+
+
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#phone[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}

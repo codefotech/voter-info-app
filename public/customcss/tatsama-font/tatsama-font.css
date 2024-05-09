@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Li Alinur Tatsama ANSI V1';
+    src: url('subset-LiAlinurTatsamaANSIV1.eot');
+    src: url('subset-LiAlinurTatsamaANSIV1.eot?#iefix') format('embedded-opentype'),
+        url('subset-LiAlinurTatsamaANSIV1.woff2') format('woff2'),
+        url('subset-LiAlinurTatsamaANSIV1.woff') format('woff'),
+        url('subset-LiAlinurTatsamaANSIV1.ttf') format('truetype'),
+        url('subset-LiAlinurTatsamaANSIV1.svg#LiAlinurTatsamaANSIV1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Li Alinur Tatsama Unicode';
+    src: url('subset-LiAlinurTatsamaUnicode.eot');
+    src: url('subset-LiAlinurTatsamaUnicode.eot?#iefix') format('embedded-opentype'),
+        url('subset-LiAlinurTatsamaUnicode.woff2') format('woff2'),
+        url('subset-LiAlinurTatsamaUnicode.woff') format('woff'),
+        url('subset-LiAlinurTatsamaUnicode.ttf') format('truetype'),
+        url('subset-LiAlinurTatsamaUnicode.svg#LiAlinurTatsamaUnicode') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

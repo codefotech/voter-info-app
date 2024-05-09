@@ -1,0 +1,618 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+@font-face {
+	font-family: 'Giorgio Sans';
+	src: url('../../fonts/GiorgioSans-Medium.eot');
+	src: local('../../fonts/Giorgio Sans Medium'), local('GiorgioSans-Medium'),
+		url('../../fonts/GiorgioSans-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/GiorgioSans-Medium.woff') format('woff'),
+		url('../../fonts/GiorgioSans-Medium.ttf') format('truetype');
+
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Giorgio Sans';
+	src: url('../../fonts/GiorgioSans-Light.eot');
+	src: local('../../fonts/Giorgio Sans Light'), local('GiorgioSans-Light'),
+		url('../../fonts/GiorgioSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/GiorgioSans-Light.woff') format('woff'),
+		url('../../fonts/GiorgioSans-Light.ttf') format('truetype');
+
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Giorgio Sans';
+	src: url('../../fonts/GiorgioSans-Extralight.eot');
+	src: local('../../fonts/Giorgio Sans Extralight'), local('GiorgioSans-Extralight'),
+		url('../../fonts/GiorgioSans-Extralight.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/GiorgioSans-Extralight.woff') format('woff'),
+		url('../../fonts/GiorgioSans-Extralight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neuzeit S LT Std';
+	src: url('../../fonts/NeuzeitSLTStd-Book.eot');
+	src: local('../../fonts/Neuzeit S LT Std Book'), local('NeuzeitSLTStd-Book'),
+		url('../../fonts/NeuzeitSLTStd-Book.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/NeuzeitSLTStd-Book.woff') format('woff'),
+		url('../../fonts/NeuzeitSLTStd-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*---------------------Login CSS----------------------------*/
+
+	.auth-bd-login {
+		background:rgba(0, 0, 0, 0) url("../../img/static/login-bg.png") no-repeat fixed center center;
+		/*background:url(../../img/static/auth-a2-border.png) no-repeat top center,  url(../../img/static/loginbd-bg.jpg);*/
+		 background-attachment: fixed;
+		 background-size: cover;
+		 padding-bottom:125px;
+	}
+
+	.mkcontainer {
+		margin: 0 auto;
+		max-width:994px;
+	}
+.adminbd .mkcontainer {
+	max-width:100%;
+	margin: 0 auto;
+}
+
+	.loginbd {
+		padding-top: 9px;
+	}
+	.login-right {
+		margin-left: 10px;
+		padding-left: 10px;
+	}
+	.login-left img {
+		width: 102%;
+	}
+	.login-left h2 img {
+		width:auto;
+	}
+.body-auth .login-left h2 {
+	margin-bottom:0px;
+	}
+
+
+	.login-left {
+		padding-right: 0px;
+	}
+	.login-left h2 {
+		font-family: "Giorgio Sans";
+		font-size: 228px;
+		line-height: 191px;
+		margin: 0 0 3px -5px;
+
+		padding: 0;
+	}
+	.login-left h4 {
+		color: #683090;
+		font-family: "Giorgio Sans";
+		font-size: 85px;
+		left: 0;
+		letter-spacing: -0.35px;
+		line-height: 66px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		text-align: left;
+		width: 103%;
+	}
+	.login-left h5 {
+		color: #000;
+		display: block;
+		font-family: "Giorgio Sans";
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 44px;
+		opacity: 0.26;
+		position: relative;
+		right: -10px;
+		text-align: right;
+	}
+
+
+	.auth-form-box {
+		margin-top: 10px;
+	}
+
+	.auth-form-box .user-field, .auth-form-box .pass-field  {
+		border: 1px #8cc63e solid;
+		width: 100%;
+		border-radius: 5px;
+		margin-bottom: 9px;
+		padding-left: 5px;
+		font-family: 'Giorgio Sans';
+		font-size: 18px;
+	}
+	.auth-form-box .user-field {
+		background: rgba(0, 0, 0, 0) url("../../img/static/usern-icon.png") no-repeat scroll 10px 8px;
+		color: #a29f9f;
+		letter-spacing: 1.01px;
+		height: 34px;
+		padding-bottom: 3px;
+		padding-left: 42px;
+	}
+	.auth-form-box .pass-field {
+		background: url(../../img/static/pass-icon.png) no-repeat scroll 9px 8px;
+		letter-spacing: 1.01px;
+		height: 34px;
+		padding-bottom: 3px;
+		padding-left: 42px;
+		color: #a29f9f;
+	}
+
+
+
+	.auth-form-box .submit-field {
+		background: #8cc63e none repeat scroll 0 0;
+		border: medium none;
+		border-radius: 5px;
+		color: #fff;
+		font-family: "Giorgio Sans";
+		font-size: 18px;
+		letter-spacing: 1.5px;
+		line-height: 24px;
+		width: 86%;
+		padding-bottom: 2px;
+	}
+
+	.auth-form-box .auth-btn input {
+		color: #9d9d9d;
+		letter-spacing: 1px;
+		line-height: 26px;
+		margin: 0;
+		text-decoration: none;
+	}
+
+
+	.auth-form-box .auth-btn label {
+		color: #9d9d9d;
+		letter-spacing: 1px;
+		line-height: 20px;
+		margin: 0;
+		padding-left: 7px;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+
+
+	.auth-form-box .auth-btn {
+
+		padding-bottom: 20px;
+	}
+
+	.auth-form-box .forgott a {
+		letter-spacing: 0.78px;
+		padding-left: 0;
+		color: #a29f9f;
+		text-decoration: none;
+	}
+
+
+.mkcontainer {
+	font-family: 'Giorgio Sans';
+	font-size: 18px;
+}
+.off-auth-btn {
+	margin-top: 0px;
+}
+.off-auth-btn a {
+	color: #000 !important;
+	display: block;
+	font-family: "Giorgio Sans";
+	font-size: 50px;
+	font-weight: bold;
+	left: -26px;
+	letter-spacing: 0;
+	line-height: 53px;
+	opacity: 0.26;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	top: 4px;
+}
+
+.auth-foter {
+	background: url(../../img/static/auth-a2-border.png) no-repeat top center, url(../../img/static/auth-foter.png) repeat-x;
+	min-height: 63px;
+}
+
+
+
+.auth-foter {
+	background: url(../../img/static/auth-a2-border.png) no-repeat top center, url(../../img/static/auth-foter.png);
+	min-height: 63px;
+	/*position:fixed;*/
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index: 999;
+}
+
+
+.lgnauth-foter {
+	background: url(../../img/static/auth-a2-border.png) no-repeat top center, url(../../img/static/auth-foter.png);
+	min-height: 63px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+/*.adminbd .body {
+	padding-bottom: 110px;
+}*/
+
+.body-auth .auth-footer-left p {
+    color: #686868;
+	font-family: "Neuzeit S LT Std";
+	font-size: 15px;
+	letter-spacing: -0.23px;
+	line-height: 12px;
+	margin: 0;
+	opacity: 1 !important;
+	padding: 10px 7px 0 4px;
+}
+
+
+.auth-footer-left p {
+	font-family: "Neuzeit S LT Std";
+	font-size: 9px;
+	letter-spacing: -0.23px;
+	line-height: 12px;
+	margin: 0;
+	opacity: 0.66;
+	padding: 10px 0 0 4px;
+}
+.auth-footer-left .auth-foot-left-p {
+	padding: 0 0 0 4px;
+}
+
+.login-right ul {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+.login-right ul li {
+		float: left;
+		list-style: none;
+		border-right: 1px #b4b4b4 solid;
+		padding:0px  9px;
+}
+.login-right ul li:last-child {
+	border-right:none;
+	padding-right: 0px;
+}
+
+.login-right ul li:first-child {
+	padding-left: 0px;
+}
+
+.auth-foter {
+	margin-top: 67px;
+	padding-top: 8px;
+}
+.footer-right {
+	border-left: 1px #c3c2c2 solid;
+}
+.auth-footer-left .auth-foot-right-p {
+	border-right: 1px solid #c3c2c2;
+	left: 42px;
+	margin-top: 9px;
+	padding-right: 9px;
+	padding-top: 0;
+	position: relative;
+}
+
+
+.mkcontainer .d a {
+
+	display: block;
+	margin-left: 11px;
+	padding-left: 22px;
+}
+.admin-ftr {
+}
+
+
+
+.admin-ft {
+	/*bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 99;*/
+}
+
+.auth-footer-right a {
+
+	display: block;
+	margin-left: 11px;
+	padding-left: 8px;
+}
+.brd {
+	border-top: 1px solid #a29f9f;
+	margin: 0 15px;
+}
+.brd .pdgl {
+	padding-left: 0px;
+}
+.brd .pdgr {
+	padding-right: 0px;
+}
+.pdgr a {
+	color:#a29f9f
+}
+
+.submit-field {
+	color: #fff!important;
+}
+
+
+.adminbd .auth-footer-left {
+	padding-left:19px;
+}
+.adminbd .auth-footer-left p {
+    font-family: "Neuzeit S LT Std";
+    font-size: 15px;
+    letter-spacing: -0.23px;
+    line-height: 12px;
+    margin: 0;
+    opacity: 0.66;
+    padding: 10px 0 0 4px;
+	color:#686868;
+
+}
+
+#allIndicatorDiv .panel .panel-footer {
+	padding: 10px 5px;
+}
+
+
+.adminbd .d {
+	padding-right:30px;
+}
+
+.adminbd .d a {
+
+	padding:0px;
+}
+.adminbd .d p {
+	border-right:1px #ccc solid;
+	 padding-right: 10px;
+}
+.adminbd .admin-ft {
+	background:#f6f7f7;
+	border-top:1px solid #683090;
+}
+
+.adminbd .d .auth-foot-right-p {
+	float:right;
+}
+.adminbd .d a {
+	float:right;
+}
+
+
+
+
+.auth-bd-login .mkcontainer .login-right .auth-form-box .alert {
+	margin-bottom: 8px;
+	padding:3px 0px;
+	font-size:12px;
+	margin-left: 14px;
+	width: 90%;
+}
+
+.huge.target {
+	/*background: rgba(0, 0, 0, 0) url("../../img/target-icon.png") no-repeat scroll ;*/
+    float: right;
+    padding-left: 25px;
+    padding-top: 10px;
+    line-height: 40px;
+    font-size: 18px;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.huge.status {
+	/*background: rgba(0, 0, 0, 0) url("../../img/status-icon.png") no-repeat scroll ;*/
+    float: right;
+    padding-left: 28px;
+    padding-top: 10px;
+    max-width: 160px;
+    line-height: 40px;
+    font-size: 55px;
+}
+
+.amcharts-main-div > .amcharts-chart-div > a[title="JavaScript charts"]{
+    display: none !important;
+}
+
+.se-pre-con {
+  background: #ffffff url("../../img/static/portal/Preloader_3.gif") no-repeat scroll center center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+@media (max-width: 1000px) {
+
+	/*.nav_menu .page-top .top-menu {
+		width: 70%;
+		float: right;
+	}*/
+
+	/*.nav_menu .page-top .top-menu ul {
+		max-width:575px;
+		float: right;
+	}
+
+	.nav_menu .page-top .top-menu .dropdown {
+		width: 64%;
+
+	}
+	.nav_menu .page-top .top-menu .dropdown-user {
+		width: 29%;
+
+	}*/
+	/*.nav-md .container.body .right_col {
+		padding-top: 115px !important;
+	}
+	.nav-md .container.body .col-md-3.left_col {
+	    top: 119px !important;
+	}*/
+
+}
+
+@media (max-width: 991px) {
+	.nav-md .container.body .right_col {
+		padding-top: 53px !important;
+	}
+	.nav-md .container.body .col-md-3.left_col {
+	    top: 68px !important;
+	}
+}
+
+@media (max-width: 815px) {
+}
+
+
+@media (max-width: 1012px) {
+
+	.auth-form-box .auth-btn {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+}
+
+@media (max-width: 1065px) {
+	.adlogo {
+	    max-width: 182px;
+
+	}
+	#Pages .searchBlock {
+		margin-bottom: 5px;
+	}
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+	.login-left {
+		display: none;
+	}
+	div.dt-buttons {
+		width: auto;
+	}
+	#datatable-buttons_filter label {
+		float: right;
+	}
+		.loginbd {
+	    padding-right: 28px;
+
+	}
+	.login-right {
+		border-left: none;
+	}
+
+	.off-auth-btn {
+		display: none;
+	}
+
+	.auth-footer-left .auth-foot-right-p {
+		left: 0px;
+		margin-top: 0px;
+	}
+	.auth-footer-right a {
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-bottom: 6px;
+		margin-top: 7px;
+	}
+	.auth-foter {
+		position: relative!important;
+		right: 0px;
+	}
+	.auth-bd-login {
+		padding-bottom: 0px;
+	}
+
+}
+
+@media (max-width: 455px) {
+	.auth-footer-left p {
+		text-align: left;
+		line-height: 17px!important;
+	}
+	.auth-footer-left p {
+		font-size: 15px!important;
+	}
+	.auth-footer-left {
+		padding-bottom: 4px;
+	}
+	.auth-footer-left .auth-foot-right-p {
+		border-right: none;
+	}
+	.mdd .auth-foot-right-p {
+		margin-top: 8px!important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

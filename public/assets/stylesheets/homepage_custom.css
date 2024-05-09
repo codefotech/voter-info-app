@@ -1,0 +1,234 @@
+/* Style the button and place it in the middle of the thumbnail/image */
+.embed-responsive {
+    margin-bottom: 5px;
+}
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .play_btn {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 66px;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.thumbnail .play_btn:hover {
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bscic_video, .bscic_video iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.welcome-image {
+    max-height: 200px;
+    max-width: 210px;
+    margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+    .welcome-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 480px) {
+    #help_sec_hidden_mobile {
+        display: none;
+    }
+    #help_sec_show_mobile {
+        display: block;
+    }
+}
+@media (min-width: 481px) {
+    #help_sec_hidden_mobile {
+        display: block;
+    }
+    #help_sec_show_mobile {
+        display: none;
+    }
+    #chaireman_showMore {
+        display: none;
+    }
+}
+
+.ti_wrapper {
+    width: 98%;
+    position: relative;
+    overflow: hidden;
+}
+
+.TickerNews {
+    width: 100%;
+    padding-left: 25px;
+}
+
+h6 {
+    text-align: center;
+}
+.show-read-more .more-text{
+    display: none;
+}
+
+a {
+    color: #333;
+}
+
+/********************
+Notice ticker styling
+*********************/
+.notice-slider {
+    background-color: rgba(105, 173, 222, 1);
+    float: left;
+    width: 100%;
+}
+
+.notice {
+    margin: -15px;
+    padding: 0px;
+}
+
+.ticker_title {
+    width: 15%;
+    float: left;
+    background-color: rgba(47, 101, 140, 1);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.notice-content {
+    width: 100%;
+    float: left;
+}
+
+.ticker-section {
+    padding: 0px 0px;
+    min-height: 49px;
+    max-height: 49px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.TickerNews {
+    width: 100%;
+}
+
+.ti_news {
+    line-height: 49px;
+}
+
+.ti_news a {
+    display: block;
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ti_news a:hover {
+    text-decoration: underline;
+}
+.navfont > li > a{
+    font-size:18px;
+}
+li.menu-text {
+    margin-top: 10px;
+}
+
+/********************
+ End of Notice ticker styling
+ *********************/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    line-height: 1;
+    height: 515px;
+}
+@media(max-width:900px){
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        line-height: 1;
+        height: 350px;
+    }
+}
+@media(max-width:768px){
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        line-height: 1;
+        height: 250px;
+    }
+}
+@media(max-width:480px){
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        line-height: 1;
+        height: 140px;
+    }
+    #myCarousel{
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .banner_img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width: 481px) {
+    .banner_img{
+        width: 100%;
+        max-height: 520px;
+    }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #F2F4F6;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*.active, .collapsible:hover {*/
+    /*background-color: #eee;*/
+/*}*/
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.content_final {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+.chvrn{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #674E86;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}

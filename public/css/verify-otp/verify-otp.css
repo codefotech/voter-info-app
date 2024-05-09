@@ -1,0 +1,35 @@
+.gradient-custom {
+    background-image: linear-gradient(to top right, #0c0958, #00228d, #07f);
+}
+
+.card-body h2 {
+    font-size: 36px;
+    color: #184ca1;
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+
+
+.inputs input {
+    width: 40px;
+    height: 40px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #184CA1
+}

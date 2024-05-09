@@ -1,0 +1,67 @@
+.p {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.map svg {
+    height: auto;
+    width: 550px;
+    margin: 0 auto;
+    display: block;
+}
+
+.map g g:hover, .map g path:hover {
+  fill: #fc0 !important;
+  cursor: pointer;
+}
+
+.map g g.zoom_map:hover {
+	cursor: pointer;
+}
+
+.map g g.notbtn:hover, .map g path.notbtn:hover {
+	fill: #E6E6E6 !important;
+	cursor: pointer;
+}
+
+#map_title {
+	font-size:11px;
+}
+
+#map_data_source {
+	font-size:10px;
+}
+
+.info_panel {
+  background-color: rgba(255,255,255, .8);
+  padding: 5px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 1px solid #333;
+  color: #333;
+  white-space: nowrap;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+
+
+.backbtn {
+	z-index: 1;
+}
+
+.zoomHover:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}

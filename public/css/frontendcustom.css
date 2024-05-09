@@ -1,0 +1,311 @@
+body {
+    font-family: 'SolaimanLipi';
+    font-size: 16px;
+}
+
+.submit-btn {
+    cursor: pointer;
+}
+
+.font-solaimanlipi {
+    font-family: 'SolaimanLipi' !important;
+}
+
+.font-li-alinur-tatsama-unicode {
+    font-family: 'Li Alinur Tatsama Unicode' !important;
+}
+
+/* Update CSS */
+.top-main-wraper .main-container {
+    padding: 110px 10px 0;
+}
+
+.search-form-wrap .filed-container .input-field {
+    font-size: 18px
+}
+
+.middle-column {
+    margin-top: 0;
+}
+
+.top-main-wraper .main-container .middle-content {
+    display: block;
+    justify-content: inherit;
+}
+
+.top-main-wraper .main-container .middle-content .text-h3 {
+    font-size: 32px;
+    line-height: 36.98px;
+}
+
+.top-main-wraper .main-container .middle-content .main-big-title {
+    font-size: 42px;
+    line-height: 53.7px;
+}
+
+.top-main-wraper .main-container .middle-content .data-title {
+    font-size: 28px;
+    line-height: 32.36px;
+}
+
+.top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation {
+    font-size: 36px;
+    line-height: 41.61px;
+}
+
+.top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation .green-big-word {
+    font-size: 60px;
+    line-height: 69.35px;
+}
+
+.top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .main-name {
+    font-size: 45px;
+    line-height: 65.52px;
+}
+
+.search-form-wrap .search-form-header {
+    font-size: 32px;
+    line-height: 36.98px;
+}
+
+.search-form-wrap .search-form-subheader {
+    font-size: 16px;
+    line-height: 18.49px;
+}
+
+.search-form-wrap .filed-container .label {
+    font-family: 'SolaimanLipi';
+    font-size: 18px;
+    line-height: 31.08px;
+}
+
+.content-box-container .list-card .list-card-data dl dt,
+.content-box-container .list-card .list-card-data dl dd,
+.table-container .table-wrap .table-header th,
+.table-container .table-wrap .table-content-wrap {
+    font-size: 18px;
+}
+
+.footer-container {
+    background-color: #FAFAFA;
+}
+
+.top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .gender {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.list-card-data .download-btn {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #eef6ff;
+    color: #005fc0;
+    border: none;
+    text-decoration: none;
+}
+
+.table-container .table-wrap th,
+.table-container .table-wrap .table-content-wrap td,
+.content-box-container .list-card .list-card-data dl {
+    font-family: 'SolaimanLipi' !important;
+}
+
+.orange-container .orange-container-wrap .logo-container {
+    padding: 40px;
+}
+
+.orange-container .orange-container-wrap .main-designation-title {
+    font-size: 42px;
+}
+
+@media screen and (max-width: 1365px) {
+    .orange-container .orange-container-wrap .main-designation-title {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .top-main-wraper .main-container .middle-content .main-big-title {
+        font-size: 38px;
+        line-height: 50.7px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .top-main-wraper .main-container .middle-content .data-title {
+        margin-bottom: 30px;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .orange-container .orange-container-wrap {
+        padding: 9px 15px;
+    }
+    .orange-container .orange-container-wrap .logo-container {
+        top: -60px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .top-main-wraper .main-container {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .orange-container .orange-container-wrap .main-designation-title {
+        font-size: 26px;
+    }
+    .orange-container .orange-container-wrap .logo-container {
+        width: 114px;
+        height: 114px;
+        top: 25px;
+        left: 36%;
+        padding: 20px;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .main-name {
+        font-size: 20px;
+        line-height: 30.27px;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation {
+        font-size: 16px;
+        line-height: 18.49px;
+        margin-top: 0;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation .green-big-word {
+        font-size: 30px;
+        line-height: 35.12px;
+    }
+
+    .top-main-wraper .main-container .middle-content .data-title {
+        margin-bottom: 0;
+    }
+
+    .top-main-wraper .main-container .middle-content .data-title {
+        font-size: 14px;
+        line-height: normal;
+        padding-bottom: 7px;
+    }
+
+    .man-top-visible-text .text-h3 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .man-top-visible-text {
+        padding: 40px 15px 0;
+    }
+
+    .top-main-wraper .main-container .main-left-container {
+        padding: 8px 15px;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .gender {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .search-form-wrap .search-form-header {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .man-top-visible-text .main-big-title {
+        font-size: 30px;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .main-name {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .man-top-visible-text .main-big-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .orange-container .orange-container-wrap .main-designation-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .orange-container .orange-container-wrap .main-designation-title .slogan {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .election-designation .green-big-word {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .top-main-wraper .main-container .middle-content .green-title-name-wrap .main-name-wrap .main-name {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .orange-container .orange-container-wrap .logo-container {
+        width: 90px;
+        height: 90px;
+        top: 25px;
+        left: 30%;
+    }
+}
+
+.partial-table .no {
+    width: 150px;
+    padding: 30px 0px;
+}
+
+.partial-table .name-col {
+    width: 200px;
+    padding: 30px 0px;
+}
+
+.partial-table .husband-col {
+    width: 200px;
+    padding: 30px 0px;
+}
+
+.partial-table .dob-col {
+    width: 150px;
+    padding: 30px 0px;
+}
+
+.partial-table .address-col{
+    width: 250px;
+    padding: 30px 0px;
+}
+
+.partial-table .center-col{
+    width: 300px;
+    padding: 30px 0px;
+}
+
+.partial-table .download-col {
+    width: 150px;
+    padding: 30px 0px;
+}
+
+#dob-error, #ward_no-error, #union_no-error {
+    color: red;
+}

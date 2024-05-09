@@ -1,0 +1,337 @@
+.container-fluid {
+  padding: 0;
+}
+
+.home-brand-logo-section .owl-dots {
+  display: none;
+}
+
+.home-brand-logo-section .owl-carousel .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-brand-logo-section .owl-carousel .item img {
+  display: block;
+  width: 160px;
+  height: auto;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+
+/* ======= CUSTOM START ========= */
+.orange-yellow {
+  color: #ffd139;
+}
+
+.tarkish-blue {
+  color: #184ca1;
+}
+
+.btn-tarkish {
+  background-color: #1757A6;
+  color: #fff;
+  border: 1px solid #1757A6;
+  padding: 10px 25px;
+  font-weight: 600;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.37) !important;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.shadow-sm-custom {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.37) !important;
+}
+
+.rounded-custom {
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ======= CUSTOM END ========= */
+
+
+
+/* ========== TOP BAR START ========== */
+#top_bar .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#top_bar .right-side {
+  display: flex;
+  align-items: center;
+}
+
+#top_bar .right-side a {
+  color: #184ca1;
+  text-decoration: none;
+}
+
+#top_bar .right-side .item {
+  margin-left: 15px;
+}
+
+/* -------- Medium Device -------- */
+@media (max-width: 767px) {
+  #top_bar .left-side, .right-side {
+      font-size: 14px;
+  }
+
+  #top_bar .right-side .item {
+      margin-left: 15px;
+  }
+
+  #top_bar .right-side .item a span {
+      display: none;
+  }
+}
+
+/* ============== TOP BAR END ============== */
+
+
+/* ============== TOP NAVBAR START ============== */
+#top_navbar .navbar-nav .nav-item {
+  padding: 0 10px;
+}
+
+#top_navbar .navbar-nav .nav-link {
+  font-weight: 600;
+}
+
+#top_navbar .sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+  transition: right 0.3s ease-in-out;
+}
+
+#top_navbar .sidebar-open {
+  right: 0;
+}
+
+#top_navbar .sidebar-close-icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#top_navbar .main-content {
+  margin-left: 250px;
+}
+
+#top_navbar .navbar-toggler {
+  background-color: #184ca1;
+  border: 2px solid #184ca1;
+  outline: none;
+  color: #fff;
+}
+
+#top_navbar .navbar-toggler:hover {
+  background-color: transparent;
+  color: #184ca1;
+  border: 2px solid #184ca1;
+}
+
+/* ------- for medium and small device ------- */
+@media screen and (max-width: 991px) {
+  #top_navbar .nav-item {
+      background-color: #E7EDF5;
+      margin-bottom: 2px;
+      text-align: center;
+  }
+}
+
+/* ============== TOP NAVBAR END ============== */
+
+
+/* ==================== MAIN START =================== */
+main {
+  border-bottom: 10px solid #FFD139;
+}
+
+/* ===================== MAIN END ==================== */
+
+
+
+/* =========== FOOTER START ============= */
+footer {
+  background-image: linear-gradient(#262262, #184CA1);
+  color: #fff;
+  padding: 150px 0 180px 0;
+}
+
+footer .footer_header h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+footer .footer_header p {
+  font-size: 14px;
+}
+
+
+footer .footer_button {
+  background-color: #FFD139;
+  color: #fff;
+  padding: 5px 6px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.newsletter_section a {
+  padding: 11px 14px;
+}
+
+.footer_heading h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer_heading span {
+  width: 50px;
+  height: 32px;
+  border-top: 3px solid #FFD139;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.newsletter_section {
+  background: #ffd139;
+  padding: 0px 0;
+  border-radius: 5px;
+}
+
+#newsletter_input {
+  padding: 10px 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  background-clip: padding-box;
+  appearance: none;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  overflow: visible;
+  font-size: 14px;
+  background-color: transparent !important;
+  height: 46px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#newsletter_input:focus {
+  box-shadow: 0px 0px 0px #fff;
+}
+
+#newsletter_input:focus:focus-visible {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.newsletter_button {
+  border: none;
+  background-color: #FFD139;
+}
+
+.social-icon a {
+color: #184CA1;
+text-decoration: none !important;
+padding: 4px 6px 0px;
+border-radius: 50%;
+line-height: 27px;
+}
+
+
+footer .footer-widget .footer_image-1 {
+  display: inline-block;
+  height: 70px;
+  width: 93%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer .footer-widget .footer_image-2 {
+  display: inline-block;
+  height: 70px;
+  width: 92%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer .footer-widget .footer_image-3 {
+  display: inline-block;
+  height: 70px;
+  width: 95%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer .footer-widget .footer_image-4 {
+  display: inline-block;
+  height: 70px;
+  width: 93%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer .footer-widget .footer_image-5 {
+  display: inline-block;
+  height: 70px;
+  width: 92%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer .footer-widget .footer_image-6 {
+  display: inline-block;
+  height: 70px;
+  width: 95%;
+  background-image: url(../images/davisuko.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* =========== FOOTER END ============= */

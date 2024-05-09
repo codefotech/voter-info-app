@@ -1,0 +1,125 @@
+body {
+  font-family: 'Myriad Pro', 'Trebuchet MS', sans-serif;
+  /*background: #137f4f;
+  background: url(../images/lg-bg.jpg);*/
+  
+}
+
+.login {
+  width: 340px;
+  background-color: #8cc63e;
+  background-color: #fff;
+  
+  border-radius: 5px;
+  padding: 20px;
+  /*background-image: -webkit-linear-gradient(90deg, #168d59, #1ea167);*/
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -170px;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.login h2 {
+  color: #000;
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+.login fieldset {
+  border: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.login fieldset input {
+  outline: none;
+  width: 300px;
+  height: 12px;
+  display: block;
+  background: #f4f4f4;
+  border: 1px solid #0d6b42;
+  margin: 0;
+  padding: 13px 15px;
+  font-size: 13px;
+}
+.login fieldset input:focus, .login fieldset input:active {
+  background-color: #8cc63e;
+}
+.login fieldset input:nth-child(1) {
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;
+}
+.login fieldset input:nth-child(2) {
+  position: relative;
+  top: -1px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.login fieldset ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.login input[type="submit"] {
+  background-color: #683090;
+	border: 0 none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	display: block;
+	font-size: 21px;
+	margin: 0;
+	padding: 6px 0;
+	text-transform: uppercase;
+	width: 335px;
+}
+.login-head {
+	overflow:hidden;
+	padding-bottom:10px;
+	text-align:center;
+}
+.login-head h2 {
+	display:block;
+	text-align:center;
+	
+}
+.login-head img {
+	margin-bottom:5px;
+}
+.login .utilities {
+  margin-top: 20px;
+}
+.login .utilities a {
+  color: #000;
+	font-size: 16px;
+	text-decoration: none;
+}
+.login .utilities a:hover {
+  color:#8cc63e;
+}
+.login .utilities a:nth-child(2) {
+  display: block;
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.login:before, .login:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: 5px;
+  width: 53%;
+  top: 15px;
+  height: 80%;
+  bottom: 80%;
+  max-width: 300px;
+  /*background: rgba(0, 0, 0, 0.7);*/
+  box-shadow: -10px -15px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(-3deg);
+}
+.login:after {
+  box-shadow: 10px -15px 20px rgba(0, 0, 0, 0.2) !important;
+  -webkit-transform: rotate(3deg);
+  right: 5px;
+  left: auto;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
