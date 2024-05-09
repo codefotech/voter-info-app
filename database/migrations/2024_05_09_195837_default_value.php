@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('voter_info', function (Blueprint $table) {
-            $table->string('voter_no')->default('0');
-            $table->string('division')->default('0');
-            $table->string('district')->default('0');
-            $table->string('upzila')->default('0');
-            $table->string('union')->default('0');
-            $table->string('election_area')->default('0');
+            $table->string('voter_no')->default('0')->change();
+            $table->string('division')->default('0')->change();
+            $table->string('district')->default('0')->change();
+            $table->string('upzila')->default('0')->change();
+            $table->string('union')->default('0')->change();
+            $table->string('election_area')->default('0')->change();
 
             //
         });
