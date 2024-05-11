@@ -40,7 +40,7 @@
                             <h3 class="text-h3 font-solaimanlipi">স্মার্ট বেলাব উপজেলা বিনির্মাণে</h3>
                             <h1 class="main-big-title font-solaimanlipi">আসন্ন উপজেলা পরিষদ নির্বাচনে<br> বেলাব উপজেলায়</h1>
                         </div>
-                        <h5 class="data-title font-solaimanlipi">৮ মে ২০২৪, বুধবার</h5>
+                        <h5 class="data-title font-solaimanlipi p-2">২৩ মে ২০২৪, মঙ্গলবার </h5>
                     </div>
 
                     <div class="green-title-name-wrap pb-80 pt-0 pt-xl-60 pb-xl-150">
