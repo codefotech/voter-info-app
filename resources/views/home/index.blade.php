@@ -178,7 +178,7 @@
 <footer class="footer-container">
     <!-- <section class="footer-wrap">Developed by <span class="logo">Coders</span>Bucket</section> -->
     <section class="footer-wrap font-solaimanlipi">যোগাযোগ: 
-        <a class="text-decoration-none" href="tel:01330003717">০১৬৩৫২৭৩৫৮১</a>,</section>
+        <a class="text-decoration-none" href="tel:01635273581">০১৬৩৫২৭৩৫৮১</a>,</section>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
