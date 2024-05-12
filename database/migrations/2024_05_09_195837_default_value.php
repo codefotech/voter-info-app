@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('upzila')->default('0')->change();
             $table->string('union')->default('0')->change();
             $table->string('election_area')->default('0')->change();
-
             //
         });
     }
