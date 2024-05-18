@@ -25,6 +25,8 @@ class VoterInfoController extends Controller
         $list = VoterInfo::orderBy('voter_info.id', 'asc')
         ->get(['voter_info.*']);
 
+        dd($list);
+
         return Datatables::of($list)
             ->addColumn('SL', function () {
                 static $count = 1;
@@ -79,9 +81,6 @@ class VoterInfoController extends Controller
             ->rawColumns(['image', 'title', 'status', 'action'])
             ->make(true);
 
-
-
-    
     }
 
 
