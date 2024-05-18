@@ -24,8 +24,7 @@ class VoterInfoController extends Controller
     {
         $list = VoterInfo::orderBy('voter_info.id', 'asc')
         ->get(['voter_info.*']);
-
-        dd($list);
+        
 
         return Datatables::of($list)
             ->addColumn('SL', function () {
