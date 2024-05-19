@@ -30,6 +30,7 @@ Route::get('/addvoterInfo', [VoterInfoController::class, 'addvoterInfo'])->name(
 Route::post('/addvoterInfo', [VoterInfoController::class, 'storeVoterInfo'])->name('voterinfo.store');
 Route::get('/uploadvoterinfo', [VoterInfoController::class, 'uploadvoterinfo'])->name('voterinfo.upload');
 Route::post('/uploadvoterinfo', [VoterInfoController::class, 'uploadvoterinfo'])->name('voterinfo.storefile');
+Route::post('/search-voter-data', [VoterInfoController::class, 'searchVoterInfo'])->name('voterinfo.searchVoterInfo');
 
 
 

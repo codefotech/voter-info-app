@@ -211,4 +211,32 @@ class VoterInfoController extends Controller
         return view('voterinfo.upload');
     }
 
+    public function searchVoterInfo(Request $request)
+    {
+        $name = $request->input('name');
+        $fathers_name = $request->input('fathers_name');
+        $dob = $request->input('dob');
+        $union_no = $request->input('union_no');
+        $page = $request->input('page', 1);
+
+        $query = VoterInfo::orderBy('voter_info.id', 'asc'); // Adjust the model as necessary
+
+        if ($name) {
+            $query->where('name', 'like', '%' . $name . '%');
+        }
+        if ($fathers_name) {
+            $query->where('fathers_name', 'like', '%' . $fathers_name . '%');
+        }
+        if ($dob) {
+            $query->where('dob','like', '%' . $dob . '%');
+        }
+        if ($union_no) {
+            $query->where('union','like', '%' . $union_no . '%');
+        }
+
+        $wards = $query->paginate(10, ['*'], 'page', $page);
+
+        return response()->json($wards);
+    }
+
 }

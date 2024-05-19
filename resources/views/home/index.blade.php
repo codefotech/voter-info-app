@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>আলহাজ্ব শরীফ উদ্দিন খান মোমেন - চেয়ারম্যান পদপ্রার্থী</title>
     <meta name="description"
           content="স্মার্ট পাটগ্রাম উপজেলা বিনির্মাণে, উপজেলা চেয়ারম্যান পদপ্রার্থী হাজী শরীফ উদ্দিন খান মোমেন ভাইকে কাপ- পিরিচ মার্কায় ভোট দিন">
@@ -115,21 +117,21 @@
                                     </body>
 
                                     </html>
-                                    <option value="1" > বেলাব </option>
-                                    <option value="2" > আমলাব </option>
-                                    <option value="3" > চরউজিলাব </option>
-                                    <option value="4" > বাজনাব </option>
-                                    <option value="5" > বিন্নাবাইদ </option>
-                                    <option value="6" > নারায়ণপুর </option>
-                                    <option value="7" > পাটুলী </option>
-                                    <option value="8" > সাল্লাবাদ </option>
+                                    <option value="বেলাব" > বেলাব </option>
+                                    <option value="আমলাব" > আমলাব </option>
+                                    <option value="চরউজিলাব" > চরউজিলাব </option>
+                                    <option value="বাজনাব" > বাজনাব </option>
+                                    <option value="বিন্নাবাইদ" > বিন্নাবাইদ </option>
+                                    <option value="নারায়ণপুর" > নারায়ণপুর </option>
+                                    <option value="পাটুলী" > পাটুলী </option>
+                                    <option value="সাল্লাবাদ" > সাল্লাবাদ </option>
                                 </select>
                             </div>
                         </div>
 
                         <div id="ward-list-div"></div>
 
-                        <button type="button" class="submit-btn mt-20">অনুসন্ধান</button>
+                        <button type="button" class="submit-btn mt-20" id="search-btn">অনুসন্ধান</button>
                     </form>
                 </div>
             </div>
@@ -171,9 +173,34 @@
         modal content goes here
 </div> -->
 
-<div id="voterList">
+<div class="container p-5" id="main" style="display: none">
+    
+<table class="table table-bordered" >
+    <thead>
+    <tr>
+        <th>সিরিয়াল নাম্বার </th>
+        <th>নাম </th>
+        <th>ভোটার নাম্বার </th>
+        <th>পিতার নাম </th>
+        <th>মাতার নাম </th>
+
+    </tr>
+    </thead>
+    <tbody id="voterList">
+        <tr></tr>
+
+    </tbody>
+
+</table>
+
+<div class="d-flex align-item-center justify-content-center">
+<button type="button" class="text-align-center btn btn-info text-white submit-btn mt-20" id="load-more-btn" style="display:none;">আরো দেখুন</button>
 
 </div>
+
+</div>
+
+
 
 <footer class="footer-container">
     <!-- <section class="footer-wrap">Developed by <span class="logo">Coders</span>Bucket</section> -->
@@ -184,7 +211,77 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 <script src="{{ asset('js/bundle.js') }}"></script>
-<script src="{{ asset('js/custom-script.js') }}"></script>
+<!-- <script src="{{ asset('js/custom-script.js') }}"></script> -->
+
+<script>
+
+$(document).ready(function() {
+        let page = 1;
+
+        $('#search-btn').on('click', function() {
+            page = 1; // Reset page count on new search
+            fetchWards(page, true);
+        });
+
+        $('#load-more-btn').on('click', function() {
+            page++;
+            fetchWards(page, false);
+        });
+
+        function fetchWards(page, isNewSearch) {
+            var name = $('input[name="name"]').val();
+            var fathers_name = $('input[name="fathers_name"]').val();
+            var dob = $('input[name="dob"]').val();
+            var union_no = $('#union_no').val();
+
+            $.ajax({
+                url: '/search-voter-data', // Replace with your server endpoint
+                type: 'POST',
+                data: {
+                    name: name,
+                    fathers_name: fathers_name,
+                    dob: dob,
+                    union_no: union_no,
+                    page: page
+                },
+                headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                 },
+                success: function(response) {
+                    var wards = response.data;
+                    var wardListDiv = $('#voterList');
+                    if (isNewSearch) {
+                        wardListDiv.empty();
+                    }
+                    if (wards.length > 0) {
+                        wards.forEach(function(ward) {
+                            tobody = $('<tr></tr>');
+                            wardListDiv.append(tobody);
+                            tobody.append('<td>' + ward.si + '</td>' +'<td>' + ward.name + '</td>'+'<td>' + ward.voter_no + '</td>'+'<td>' + ward.fathers_or_husband + '</td>'+'<td>'+ ward.mother + '</td>'); // Assuming ward object has a name property
+                        });
+                        if (response.next_page_url) {
+
+                            $('#main').show();
+                            $('#load-more-btn').show();
+                        } else {
+                            $('#main').hide();
+                            $('#load-more-btn').hide();
+                        }
+                    } else {
+                        if (isNewSearch) {
+                            wardListDiv.append('<p>No wards found.</p>');
+                        }
+                        $('#load-more-btn').hide();
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+    });
+
+</script>
 </body>
 
 </html>
