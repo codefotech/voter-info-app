@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>হাজী শরীফ উদ্দিন খান মোমেন - চেয়ারম্যান পদপ্রার্থী</title>
+    <title>আলহাজ্ব শরীফ উদ্দিন খান মোমেন - চেয়ারম্যান পদপ্রার্থী</title>
     <meta name="description"
-          content="স্মার্ট পাটগ্রাম উপজেলা বিনির্মাণে, উপজেলা চেয়ারম্যান পদপ্রার্থী হাজী শরীফ উদ্দিন খান মোমেন ভাইকে আনারস মার্কায় ভোট দিন">
+          content="স্মার্ট পাটগ্রাম উপজেলা বিনির্মাণে, উপজেলা চেয়ারম্যান পদপ্রার্থী হাজী শরীফ উদ্দিন খান মোমেন ভাইকে কাপ- পিরিচ মার্কায় ভোট দিন">
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
     <!-- <link rel="preload" href="customcss/font-solaimanlipi/SolaimanLipi.woff2" as="font" type="font/woff2" crossorigin> -->
     <link rel="stylesheet" href="{{ asset('customcss/font-solaimanlipi/solaimanlipi.css') }}">
