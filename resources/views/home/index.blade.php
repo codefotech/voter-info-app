@@ -47,7 +47,7 @@
                         <h5 class="election-designation mb-0 mb-md-0 font-solaimanlipi"><span>উপজেলা</span> <span class="green-big-word">চেয়ারম্যান</span> পদপ্রার্থী</h5>
                         <div class="main-name-wrap">
                             <h5 class="main-name text-start text-md-end font-li-alinur-tatsama-unicode position-relative pb-20 pb-md-30">
-                                <span>হাজী শরীফ উদ্দিন খান মোমেন</span>
+                                <span>আলহাজ্ব শরীফ উদ্দিন খান মোমেন </span>
                                 <span class="gender text-end d-block font-solaimanlipi">ভাইকে</span>
                             </h5>
                         </div>
@@ -61,7 +61,7 @@
             <div class="form-top-orange-container">
                 <div class="orange-container">
                     <div class="orange-container-wrap">
-                        <h3 class="main-designation-title font-li-alinur-tatsama-unicode"><span class="brand">কাপ পিরিজ</span> <span class="slogan">মার্কায় ভোট দিন</span></h3>
+                        <h3 class="main-designation-title font-li-alinur-tatsama-unicode"><span class="brand">কাপ-পিরিচ </span> <span class="slogan">মার্কায় ভোট দিন</span></h3>
 
                         <div class="logo-container">
                             <img class="w-auto img-fluid" src="{{ asset('img/logo.png') }}" alt="logo">
@@ -151,7 +151,7 @@
     <section class="main-orange-container">
         <div class="orange-container">
             <div class="orange-container-wrap">
-                <h3 class="main-designation-title font-li-alinur-tatsama-unicode"><span class="brand">কাপ পিরিজ</span> <span
+                <h3 class="main-designation-title font-li-alinur-tatsama-unicode"><span class="brand">কাপ-পিরিচ </span> <span
                         class="slogan">মার্কায় ভোট দিন</span></h3>
 
                 <div class="logo-container">
