@@ -183,6 +183,7 @@
         <th>ভোটার নাম্বার </th>
         <th>পিতার নাম </th>
         <th>মাতার নাম </th>
+        <th>ইউনিয়ন  </th>
 
     </tr>
     </thead>
@@ -257,7 +258,7 @@ $(document).ready(function() {
                         wards.forEach(function(ward) {
                             tobody = $('<tr></tr>');
                             wardListDiv.append(tobody);
-                            tobody.append('<td>' + ward.si + '</td>' +'<td>' + ward.name + '</td>'+'<td>' + ward.voter_no + '</td>'+'<td>' + ward.fathers_or_husband + '</td>'+'<td>'+ ward.mother + '</td>'); // Assuming ward object has a name property
+                            tobody.append('<td>' + ward.si + '</td>' +'<td>' + ward.name + '</td>'+'<td>' + ward.voter_no + '</td>'+'<td>' + ward.fathers_or_husband + '</td>'+'<td>'+ ward.mother + '</td>'+'<td>'+ ward.union + '</td>'); // Assuming ward object has a name property
                         });
                         if (response.next_page_url) {
 
