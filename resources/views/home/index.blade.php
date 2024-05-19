@@ -264,7 +264,6 @@ $(document).ready(function() {
                             $('#main').show();
                             $('#load-more-btn').show();
                         } else {
-                            $('#main').hide();
                             $('#load-more-btn').hide();
                         }
                     } else {
