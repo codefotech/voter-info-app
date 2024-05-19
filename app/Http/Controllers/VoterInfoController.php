@@ -22,7 +22,7 @@ class VoterInfoController extends Controller
 
     public function voterlistdata()
     {
-        $list = VoterInfo::orderBy('voter_info.id', 'asc')->limit(100)
+        $list = VoterInfo::orderBy('voter_info.id', 'asc')
         ->get(['voter_info.*']);
         
 
@@ -65,11 +65,6 @@ class VoterInfoController extends Controller
             ->editColumn('election_area', function ($list) {
                 return $list->election_area;
             })
-            
-
-            
-
-            
 
             ->addColumn('action', function ($list) {
              
