@@ -222,10 +222,10 @@ class VoterInfoController extends Controller
         $query = VoterInfo::orderBy('voter_info.id', 'asc'); // Adjust the model as necessary
 
         if ($name) {
-            $query->where('name', 'like', '%' . $name );
+            $query->where('name', 'like', '%' . $name.'%' );
         }
         if ($fathers_name) {
-            $query->where('fathers_name', 'like', '%' . $fathers_name . '%');
+            $query->where('fathers_or_husband', 'like', '%' . $fathers_name . '%');
         }
         if ($dob) {
             $query->where('dob','like', '%' . $dob . '%');
